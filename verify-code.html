@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="mobile-only">
+    <section class="cafi-signIn-section signUp-page">
+        <div class="container-fluid">
+            <div class="cafi-signIn-content" id="regContent">
+                
+                <!-- page to last page -->
+                <div class="back-page-button">
+                    <a href="">
+                        <img src="./images/icons/left-arrow-black.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="mb-4">
+                    <img src="./images/icons/enter-otp.svg" alt="app-logo"
+                        class="img-fluid mb-2 app-logo enter-otp-img">
+                    <img src="./images/icons/verify-otp.svg" alt="app-logo"
+                        class="img-fluid mb-2 app-logo verify-otp-img">
+
+                    <h1 class="mb-2">Verify Code</h1>
+                    <p class="text-warning">Check code in your SMS or Email</p>
+                </div>
+
+                <form action="./sign-up.html" class="" id="enterOtp">
+
+                    <div class="cafi-enter-otp-wrapper">
+                        <div class="otp-digits">
+                            <input type="number" maxlength="1">
+                        </div>
+                        <div class="otp-digits">
+                            <input type="number" maxlength="1">
+                        </div>
+                        <div class="otp-digits">
+                            <input type="number" maxlength="1">
+                        </div>
+                        <div class="otp-digits">
+                            <input type="number" maxlength="1">
+                        </div>
+                    </div>
+
+                    <!-- Term & Policy -->
+                    <div class="mb-3 ps-2 rememberMe">
+                        <label for="">Don't receive code? <a href="#">Sent again </a>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary w-100 rounded-pill mb-3" id="btnSubmit" disabled>Verify</button>
+
+                    <p class="cafi-dontHaveAccount">Your have any problem? <a href="#">Help</a></p>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./js/site.js"> </script>
+
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+.cafi-signIn-section {
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+
+    .app-logo {
+        max-width: 100px;
+    }
+
+    .cafi-signIn-inputs {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 6px;
+            width: 35px;
+        }
+
+        .form-input {
+            position: relative;
+            width: calc(100% - 35px);
+
+            label {
+                position: absolute;
+                left: 5px;
+                top: -4px;
+                font-size: 16px;
+                z-index: 1;
+                transition: ease all .3s;
+                opacity: 0;
+                color: $black;
+            }
+
+            input {
+                width: 100%;
+                border: 0;
+                border-radius: 0;
+                border-bottom: 1px solid $black50;
+                padding: 5px;
+                position: relative;
+                z-index: 2;
+
+
+                &:focus,
+                &:focus-visible {
+                    box-shadow: none;
+                    outline: none;
+                    border: 0;
+                    border-bottom: 1px solid $black50;
+
+
+                    +label {
+                        color: $black;
+                        font-size: 12px;
+                        top: -15px;
+                        opacity: 1;
+                    }
+
+                    &::placeholder {
+                        transition: ease all .3s;
+                        color: transparent;
+                    }
+                }
+
+                :not(:empty) {
+                    +label {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .cafi-signIn-content {
+        padding-top: 70px;
+
+        .rememberMe {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            label {
+                font-size: 16px;
+                margin-left: 6px;
+            }
+        }
+
+        form {
+
+            .cafi-signIn-inputs img,
+            .btn-primary,
+            .rememberMe input {
+                opacity: .5;
+                transition: ease all .3s;
+            }
+
+            .cafi-signIn-inputs {
+                margin-bottom: 24px;
+
+                img {
+                    max-height: 35px;
+                }
+            }
+
+            &.active {
+
+                .cafi-signIn-inputs img,
+                .btn-primary,
+                .rememberMe input {
+                    opacity: 1;
+                }
+
+                input,
+                input:focus,
+                input:focus-visible {
+                    border-color: $black;
+                }
+            }
+
+
+            .cafi-signInWith {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 22px;
+
+                span {
+                    height: 1px;
+                    width: 100%;
+                    border: 1px solid $black;
+                    display: inline-block;
+                }
+
+                p {
+                    text-wrap: nowrap;
+                    margin: 0 10px;
+                }
+            }
+
+            .cafi-signIn-tools {
+                margin-bottom: 16px;
+
+                img {
+                    max-width: 40px;
+                    margin: 0 5px;
+                }
+            }
+
+            .cafi-dontHaveAccount {
+                color: $black50;
+            }
+        }
+
+        .cafi-enter-otp-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .otp-digits {
+                width: calc(25% - 8px);
+                background-color: #00000010;
+                height: 100px;
+                padding: 10px;
+                border-radius: 10px;
+
+                input {
+                    max-width: 80%;
+                    margin: 0 auto;
+                    height: 100%;
+                    border: 0;
+                    background-color: transparent;
+                    font-size: 30px;
+                    text-align: center;
+                    appearance: none;
+
+                    &:empty {
+                        border-bottom: 1px solid $black50;
+                    }
+
+                    &:focus,
+                    &:focus-visible,
+                    &:focus-within {
+                        border: 0;
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+
+                    &::-webkit-inner-spin-button,
+                    &::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+
+                }
+            }
+        }
+
+        .verify-otp-img {
+            display: none;
+        }
+
+        &.verify {
+            .enter-otp-img {
+                display: none;
+            }
+
+            .verify-otp-img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &.signUp-page {
+
+        .cafi-signIn-content {
+            text-align: center;
+
+            .rememberMe {
+                align-items: start;
+                text-align: start;
+
+                input {
+                    margin: 2px 5px 0px 0px;
+                }
+            }
+
+            form {
+
+                .cafi-signInWith {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 22px;
+                }
+
+            }
+
+            .cafi-dontHaveAccount {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 30px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="mobile-only">
+    <section class="cafi-signIn-section">
+        <div class="container-fluid">
+            <div class="cafi-signIn-content">
+                <div class="text-center">
+                    <div class="mb-4">
+                        <img src="./images/icons/app-icon.svg" alt="app-logo" class="img-fluid mb-2 app-logo">
+                        <h1 class="mb-2">Sign In</h1>
+                        <p class="text-warning">Access to your account</p>
+                    </div>
+                    <form action="./sign-up.html" class="" id="signInForm">
+
+                        <div class="cafi-signIn-inputs">
+                            <img src="./images/icons/sign-at.svg" alt="">
+                            <div class="form-input">
+                                <input type="text" placeholder="Email or Phone">
+                                <label>Email or Phone</label>
+                            </div>
+                        </div>
+
+                        <div class="cafi-signIn-inputs">
+                            <img src="./images/icons/security-lock.svg" alt="">
+                            <div class="form-input">
+                                <input type="password" placeholder="Password">
+                                <label>Password</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 rememberMe">
+                            <input type="checkbox" name="" id="cafiCheckbox" class="cafi-checkbox" disabled>
+                            <label for="">Remember Me</label>
+                        </div>
+
+                        <button class="btn btn-primary w-100 rounded-pill mb-3" id="btnSubmit" disabled>Sign In</button>
+
+                        <a href="#" class="d-inline-block mb-3">Forgot Password?</a>
+
+                        <div class="cafi-signInWith">
+                            <span></span>
+                            <p>or sign in with</p>
+                            <span></span>
+                        </div>
+
+                        <div class="cafi-signIn-tools">
+                            <img src="./images/icons/google.png" alt="">
+                            <img src="./images/icons/twitter.png" alt="">
+                            <img src="./images/icons/facebook.png" alt="">
+                        </div>
+
+                        <p class="cafi-dontHaveAccount">Don’t have a account? <a href="./sign-up.html">Sign Up</a></p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./js/sign.js"></script>
+
+</body>
+
+</html>

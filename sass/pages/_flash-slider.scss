@@ -1,0 +1,57 @@
+.cafi-flash-slider {
+    &-section {
+        padding: 15px 0;
+        position: relative;
+
+        .carousel {
+            height: calc(100dvh - 120px);
+
+            &-item {
+                text-align: center;
+
+                img {
+                    margin-bottom: 20px;
+                    max-height: 60dvh;
+                }
+
+                h1 {
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 400;
+                }
+            }
+
+            &-indicators [data-bs-target] {
+                height: 15px;
+                width: 15px;
+                background-color: $black10;
+                margin: 0 8px;
+                border-radius: 50%;
+
+                &.active {
+                    background-color: $yellow;
+                }
+            }
+
+        }
+    }
+
+    &-bottomSection {
+        position: absolute;
+        width: calc(100% - 30px);
+        text-align: end;
+
+        .skip {
+            color: $black50;
+
+            &-line {
+                width: 88%;
+                height: 1px;
+                background-color: $black50;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+.cafi-menubar {
+    background-color: $primary;
+    position: fixed;
+    bottom: 0;
+    padding: 11.5px 0;
+    width: 100%;
+    right: 0;
+
+    .cafi-menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .menu-item {
+            opacity: .8;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                span,
+                i {
+                    color: $white;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
+}

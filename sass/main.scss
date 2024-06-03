@@ -1,0 +1,27 @@
+@import './abstracts/variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// slick slider
+@import '../slick-slider/slick/slick.scss';
+@import '../slick-slider/slick/slick-theme.scss';
+
+@import './base/reset';
+@import './base/typography';
+
+@import './components/buttons';
+
+// all common classes
+@import './components/common-classes';
+
+// all pages styles
+@import './pages/loader';
+@import './pages/flash-slider';
+@import './pages/signin-and-signup';
+@import './pages/password-created';
+@import './pages/index';
+@import './pages/circle';
+
+// layouts
+@import './layout/index-header.scss';
+@import './layout/menubar.scss';

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="mobile-only">
+    <section class="cafi-signIn-section signUp-page">
+        <div class="container-fluid">
+            <div class="cafi-signIn-content">
+
+                <div class="back-page-button">
+                    <a href="">
+                        <img src="./images/icons/left-arrow-black.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="mb-4">
+                    <img src="./images/icons/app-icon.svg" alt="app-logo" class="img-fluid mb-2 app-logo">
+                    <h1 class="mb-2">Sign Up</h1>
+                    <p class="text-warning">Register New Account</p>
+                </div>
+
+                <form action="./verify-code.html" class="" id="signInForm">
+
+                    <!-- Full Name -->
+                    <div class="cafi-signIn-inputs">
+                        <img src="./images/icons/user.svg" alt="">
+                        <div class="form-input">
+                            <input type="text" placeholder="Full Name">
+                            <label>Full Name</label>
+                        </div>
+                    </div>
+
+                    <!-- Email and Phone -->
+                    <div class="cafi-signIn-inputs">
+                        <img src="./images/icons/sign-at.svg" alt="">
+                        <div class="form-input">
+                            <input type="email" placeholder="Enter your Email">
+                            <label>Enter your Email</label>
+                        </div>
+                    </div>
+
+                    <div class="cafi-signIn-inputs">
+                        <img src="./images/icons/mobile.svg" alt="">
+                        <div class="form-input">
+                            <input type="tel" placeholder="Email Mobile Number">
+                            <label>Email Mobile Number</label>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Term & Policy -->
+                    <div class="mb-3 ps-2 rememberMe">
+                        <div>
+                            <input type="checkbox" name="" id="cafiCheckbox" class="cafi-checkbox" disabled>
+                        </div>
+                        <label for="">I agree with <a href="#">Terms Of Services</a> and
+                            <a href="#">Policy Privacy</a>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary w-100 rounded-pill mb-3" id="btnSubmit" disabled>Sign Up</button>
+
+
+                    <p class="cafi-dontHaveAccount">Your have any problem? <a href="#">Help</a></p>
+
+                </form>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./js/sign.js"></script>
+
+</body>
+
+</html>

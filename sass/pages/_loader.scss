@@ -1,0 +1,30 @@
+.cafi-loader-section {
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.cafi-loader-section img {
+    max-width: 100px;
+    margin-bottom: 16px;
+    animation: loading 5s infinite ease;
+}
+
+@keyframes loading {
+    0% {
+        // transform: scale(1);
+        opacity: 1;
+        transform: rotate(-180deg);
+    }
+
+    50% {
+        transform: scale(0.9);
+        opacity: .3;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        transform: rotate(-180deg);
+    }
+}

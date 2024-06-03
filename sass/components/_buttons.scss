@@ -1,0 +1,27 @@
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+
+    &:hover,
+    &:focus-visible {
+        background-color: $primary;
+        border-color: $primary;
+        box-shadow: none;
+        color: $white;
+    }
+}
+
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
+    color: $white;
+}
+
+.btn-sm{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 14px;
+}

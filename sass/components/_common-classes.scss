@@ -1,0 +1,59 @@
+.cafi-content-center {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cafi-text-center {
+    text-align: center;
+}
+
+.cafi-checkbox {
+    position: relative;
+    height: 18px;
+    width: 18px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 20px;
+        width: 20px;
+        border: 1px solid $black;
+        border-radius: 3px;
+        top: -1px;
+        left: -1px;
+        background-color: $white;
+    }
+
+    &:checked {
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background-image: url(../images/icons/icon-check-lt-grey.svg);
+            background-size: 70%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+        }
+    }
+}
+
+.back-page-button {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+
+    img {
+        max-width: 25px;
+    }
+}
+
+@media (min-width: 576px) {
+    .mobile-only {
+        display: none;
+    }
+}
