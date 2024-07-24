@@ -21,8 +21,13 @@ h5 {
 }
 
 h6,
-p,.fs-6 {
+p,
+.fs-6 {
     font-size: 13px !important;
+}
+
+.fw-600{
+    font-weight: 600;
 }
 
 @media (max-width: 360px) {

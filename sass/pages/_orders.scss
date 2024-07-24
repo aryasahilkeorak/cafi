@@ -1,0 +1,93 @@
+.cafi-order-types {
+    padding: 15px 0;
+
+    .order-type-btns {
+        overflow-x: auto;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+
+        .order-type-btn {
+            border-radius: 30px;
+
+            a {
+                background-color: rgba($color: $black, $alpha: 0.05);
+                border-color: rgba($color: $black, $alpha: 0.05);
+                border-radius: 30px;
+                padding: 8px 20px;
+                margin-right: 10px;
+                transition: ease all .3s;
+                color: $primary;
+                display: inline-block;
+                text-wrap: nowrap;
+            }
+
+            &.ui-tabs-active {
+                a {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .ordered-item-info {
+        display: flex;
+        align-items: end;
+        @include cafi-cards;
+
+        .item-img {
+            margin-right: 15px;
+
+            img {
+                border-radius: 10px;
+                width: 150px;
+            }
+        }
+
+        .item-details {
+
+            .item-name,
+            .item-price {
+                font-weight: 600;
+            }
+
+            .item-quantity {
+                font-weight: normal;
+            }
+
+            .order-status {
+                font-weight: normal;
+                color: $primary;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    .order-details-card {
+        @include cafi-cards;
+
+        .ordered-items {
+            border-top: 2px solid rgba($color: $black, $alpha: 0.5);
+            border-bottom: 2px solid rgba($color: $black, $alpha: 0.5);
+
+            .ordered-item-info {
+                border-radius: 0;
+                margin-bottom: 0px;
+
+                .item-img {
+                    max-width: 110px;
+                }
+
+                &:last-of-type {
+                    padding-top: 0px !important;
+                }
+            }
+        }
+
+
+    }
+}

@@ -9,6 +9,10 @@
 @import './base/reset';
 @import './base/typography';
 
+// mixins
+@import './abstracts/mixins';
+
+// components
 @import './components/buttons';
 
 // all common classes
@@ -20,7 +24,7 @@
 @import './pages/signin-and-signup';
 @import './pages/password-created';
 @import './pages/index';
-@import './pages/circle';
+@import './pages/orders';
 
 // layouts
 @import './layout/index-header.scss';

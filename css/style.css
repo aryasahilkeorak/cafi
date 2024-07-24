@@ -12133,8 +12133,13 @@ h5, .h5 {
 }
 
 h6, .h6,
-p, .fs-6 {
+p,
+.fs-6 {
   font-size: 13px !important;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 @media (max-width: 360px) {
@@ -12715,41 +12720,82 @@ fieldset:disabled .btn {
   margin: 0 auto;
 }
 
-.outer-container {
-  height: 250px;
-  width: 250px;
-  background-color: rgba(245, 204, 204, 0.8274509804);
-  margin: 20px auto;
+.cafi-order-types {
+  padding: 15px 0;
 }
-.outer-container .circle-1 {
-  background-color: #ffffff;
-  height: 100%;
-  width: 100%;
-  border-radius: 100%;
-  border: 3px solid gray;
+.cafi-order-types .order-type-btns {
+  overflow-x: auto;
+  list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
 }
-.outer-container .circle-1 .circle-2 {
-  background-color: #ffffff;
-  height: calc(100% - 30px);
-  width: calc(100% - 30px);
-  border-radius: 100%;
-  border: 1px solid gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cafi-order-types .order-type-btns .order-type-btn {
+  border-radius: 30px;
 }
-.outer-container .circle-1 .circle-2 .circle-3 {
-  background-color: #969696;
-  height: calc(100% - 30px);
-  width: calc(100% - 30px);
-  border-radius: 100%;
-  border: 1px solid gray;
+.cafi-order-types .order-type-btns .order-type-btn a {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-right: 10px;
+  transition: ease all 0.3s;
+  color: #FF045F;
+  display: inline-block;
+  text-wrap: nowrap;
+}
+.cafi-order-types .order-type-btns .order-type-btn.ui-tabs-active a {
+  background-color: #FF045F;
+  color: #FFFFFF;
+}
+.cafi-order-types .ordered-item-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin-bottom: 10px;
+}
+.cafi-order-types .ordered-item-info .item-img {
+  margin-right: 15px;
+}
+.cafi-order-types .ordered-item-info .item-img img {
+  border-radius: 10px;
+  width: 150px;
+}
+.cafi-order-types .ordered-item-info .item-details .item-name,
+.cafi-order-types .ordered-item-info .item-details .item-price {
+  font-weight: 600;
+}
+.cafi-order-types .ordered-item-info .item-details .item-quantity {
+  font-weight: normal;
+}
+.cafi-order-types .ordered-item-info .item-details .order-status {
+  font-weight: normal;
+  color: #FF045F;
+  margin-bottom: 6px;
+}
+.cafi-order-types .order-details-card {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 15px 15px;
+  margin-bottom: 10px;
+}
+.cafi-order-types .order-details-card .ordered-items {
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.cafi-order-types .order-details-card .ordered-items .ordered-item-info {
+  border-radius: 0;
+  margin-bottom: 0px;
+}
+.cafi-order-types .order-details-card .ordered-items .ordered-item-info .item-img {
+  max-width: 110px;
+}
+.cafi-order-types .order-details-card .ordered-items .ordered-item-info:last-of-type {
+  padding-top: 0px !important;
 }
 
 .cafi-home-header {
@@ -12812,6 +12858,21 @@ fieldset:disabled .btn {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cafi-home-header .cafi-header-wrapper.backbtn-w-heading {
+  justify-content: center;
+  padding: 13px 0;
+}
+.cafi-home-header .cafi-header-wrapper.backbtn-w-heading .last-page {
+  position: absolute;
+  left: 15px;
+}
+.cafi-home-header .cafi-header-wrapper.backbtn-w-heading .last-page img {
+  max-width: 25px;
+}
+.cafi-home-header .cafi-header-wrapper.backbtn-w-heading .heading-title {
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .cafi-menubar {

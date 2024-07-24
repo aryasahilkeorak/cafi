@@ -70,5 +70,27 @@
                 }
             }
         }
+
+        &.backbtn-w-heading {
+            justify-content: center;
+            padding: 13px 0;
+
+            .last-page {
+                position: absolute;
+                left: 15px;
+
+                img {
+                    max-width: 25px;
+                }
+            }
+
+            .heading-title {
+                color: $white;
+                font-weight: 500;
+            }
+        }
     }
+
+
+
 }

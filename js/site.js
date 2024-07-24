@@ -43,3 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// This function will redirect the user to the previous page in their history
+function goToLastPage() {
+    window.history.back();
+}
+
+// Adding an event listener to the element with ID 'goToLast'
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("goToLast").addEventListener("click", goToLastPage);
+});
+
+

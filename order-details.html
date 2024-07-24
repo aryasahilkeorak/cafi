@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp - Cafi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css"> -->
+</head>
+
+<body class="mobile-only">
+
+    <!-- header -->
+    <header class="cafi-home-header">
+        <div class="container-fluid">
+            <div class="cafi-header-wrapper backbtn-w-heading">
+                <a href="#" class="last-page" id="goToLast">
+                    <img src="./images/icons/left-arrow-white.png" alt="" class="img-fluid">
+                </a>
+                <h3 class="heading-title mb-0">Order Details</h3>
+            </div>
+        </div>
+    </header>
+
+    <main class="cafi-main-wrapper">
+        <section class="cafi-order-types">
+            <div class="container-fluid">
+                <div class="order-details-card">
+                    <div class="d-flex justify-content-between align-items-center pb-3">
+                        <div>
+                            <h5 class="fw-600">Order ID : 12B32</h5>
+                            <h6 class="text-warning mb-0">01.Jan.2022</h6>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-primary rounded-pill fw-normal">Invoice</a>
+                        </div>
+                    </div>
+
+                    <div class="ordered-items">
+                        <div class="ordered-item-info px-0 bg-transparent">
+                            <div class="item-img">
+                                <img src="./images/slider/promo-slider-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="item-details">
+                                <h5 class="item-name">Mocha Frappe</h5>
+                                <h5 class="item-quantity">3 Items</h5>
+                                <h5 class="item-price">3.50$</h5>
+                            </div>
+                        </div>
+
+                        <div class="ordered-item-info px-0 bg-transparent">
+                            <div class="item-img">
+                                <img src="./images/slider/promo-slider-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="item-details">
+                                <h5 class="item-name">Mocha Frappe</h5>
+                                <h5 class="item-quantity">3 Items</h5>
+                                <h5 class="item-price">3.50$</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <menu class="cafi-menubar">
+        <nav>
+            <div class="container-fluid">
+                <div class="cafi-menu-items">
+                    <div class="menu-item">
+                        <a href="./home.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </div>
+                    <div class="menu-item active">
+                        <a href="./my-orders.html">
+                            <i class="fa-solid fa-scroll"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Chat</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Cart</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </menu>
+
+    <script src="./js/site.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+
+</html>
