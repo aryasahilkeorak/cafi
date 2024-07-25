@@ -12163,11 +12163,20 @@ p,
     font-size: 12px;
   }
 }
+.btn {
+  font-size: 14px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 14px;
+}
+
 .btn-primary {
   background-color: #FF045F;
   border-color: #FF045F;
   color: #FFFFFF;
-  font-size: 18px;
   font-weight: 600;
 }
 .btn-primary:hover, .btn-primary:focus-visible {
@@ -12181,12 +12190,6 @@ p,
 .btn.disabled,
 fieldset:disabled .btn {
   color: #FFFFFF;
-}
-
-.btn-sm, .btn-group-sm > .btn {
-  font-size: 12px;
-  font-weight: 400;
-  padding: 3px 14px;
 }
 
 .cafi-content-center {
@@ -12524,7 +12527,7 @@ fieldset:disabled .btn {
 }
 
 .cafi-main-wrapper {
-  height: calc(100dvh - 120px);
+  height: calc(100dvh - 115px);
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -12782,10 +12785,13 @@ fieldset:disabled .btn {
   border-radius: 10px;
   padding: 15px 15px;
   margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .cafi-order-types .order-details-card .ordered-items {
-  border-top: 2px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 0px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 0px solid rgba(0, 0, 0, 0.5);
 }
 .cafi-order-types .order-details-card .ordered-items .ordered-item-info {
   border-radius: 0;
@@ -12796,6 +12802,39 @@ fieldset:disabled .btn {
 }
 .cafi-order-types .order-details-card .ordered-items .ordered-item-info:last-of-type {
   padding-top: 0px !important;
+}
+.cafi-order-types .order-details-card .ordered-items,
+.cafi-order-types .order-details-card .customer-address,
+.cafi-order-types .order-details-card .payment-method {
+  margin-bottom: 15px;
+}
+.cafi-order-types .order-details-card .payment-method {
+  border-top: 0px solid rgba(0, 0, 0, 0.5);
+  border-right: 0px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 0px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 15px;
+}
+.cafi-order-types .order-details-card .payment-method .btn {
+  cursor: default;
+}
+
+.cafi-main-wrapper.invoice-page {
+  height: calc(100dvh - 55px);
+}
+.cafi-main-wrapper.invoice-page .invoice-section {
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 15px;
+  border-radius: 15px;
+}
+.cafi-main-wrapper.invoice-page .invoice-section .brand-name img {
+  border-radius: 50%;
+}
+.cafi-main-wrapper.invoice-page .invoice-section .total-items {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 0 solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 0 solid rgba(0, 0, 0, 0.5);
 }
 
 .cafi-home-header {

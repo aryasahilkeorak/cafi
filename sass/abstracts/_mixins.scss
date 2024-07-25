@@ -4,3 +4,10 @@
     padding: 15px 15px;
     margin-bottom: 10px;
 }
+
+@mixin border($top, $right, $bottom, $left, $border-color: rgba(0, 0, 0, 0.5)) {
+    border-top: $top solid $border-color;
+    border-right: $right solid $border-color;
+    border-bottom: $bottom solid $border-color;
+    border-left: $left solid $border-color;
+}

@@ -69,10 +69,10 @@
 
     .order-details-card {
         @include cafi-cards;
+        margin-bottom: 0;
 
         .ordered-items {
-            border-top: 2px solid rgba($color: $black, $alpha: 0.5);
-            border-bottom: 2px solid rgba($color: $black, $alpha: 0.5);
+            @include border(1px, 0px, 1px, 0px);
 
             .ordered-item-info {
                 border-radius: 0;
@@ -88,6 +88,41 @@
             }
         }
 
+        .ordered-items,
+        .customer-address,
+        .payment-method {
+            margin-bottom: 15px;
+        }
 
+        .payment-method {
+            @include border(0px, 0px, 1px, 0px);
+            padding-bottom: 15px;
+
+            .btn {
+                cursor: default;
+            }
+        }
+
+
+    }
+}
+
+.cafi-main-wrapper.invoice-page {
+    height: calc(100dvh - 55px);
+
+    .invoice-section {
+        background-color: rgba($color: $black, $alpha: .05);
+        margin: 15px;
+        border-radius: 15px;
+
+        .brand-name {
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .total-items {
+            @include border(1px, 0, 1px, 0);
+        }
     }
 }
