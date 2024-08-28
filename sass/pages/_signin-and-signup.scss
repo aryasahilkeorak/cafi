@@ -159,7 +159,7 @@
 
             .otp-digits {
                 width: calc(25% - 8px);
-                background-color: #00000010;
+                background-color: rgba($color: $black, $alpha: 0.1);
                 height: 100px;
                 padding: 10px;
                 border-radius: 10px;

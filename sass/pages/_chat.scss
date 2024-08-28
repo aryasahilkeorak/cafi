@@ -1,0 +1,103 @@
+.cafi-chat-wrapper {
+    .pinned-chats {
+        background-color: rgba($color: $black, $alpha: .05);
+
+        .cafi-chatItem {
+            background-color: rgba($color: $black, $alpha: .0) !important;
+        }
+    }
+
+    .all-messages {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        padding-bottom: 5px;
+
+        h6 {
+            margin-bottom: 0;
+            color: rgba($color: $black, $alpha: 0.5);
+            margin-left: 6px;
+        }
+    }
+
+    .cafi-chatList {
+        padding: 0 15px;
+
+        .cafi-chatItem {
+            position: relative;
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba($color: $black, $alpha: .2);
+
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
+
+            .chatItem-userAvtar {
+                height: 60px;
+                width: 60px;
+                margin-right: 20px;
+
+                img {
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                    border: 1px solid rgba($color: $black, $alpha: .2);
+                    padding: 2px;
+                }
+            }
+
+            .chatItem-info {
+                max-width: 60%;
+                overflow: hidden;
+
+                .chatItem-username {
+                    font-weight: 600;
+                }
+
+                .chatItem-username,
+                .chatItem-massageStatus {
+                    margin-bottom: 0px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+
+                .chatItem-massageStatus {
+
+                    &.demo,
+                    &.read {
+                        color: rgba($color: $black, $alpha: .5);
+                    }
+
+                    &.unread {
+                        font-weight: 600;
+                        color: $black;
+                    }
+
+                    &.typing {
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .chatItem-lastText {
+                position: absolute;
+                right: 0;
+                top: 20px;
+
+                span {
+                    font-size: 14px;
+                    color: $warning;
+                    font-weight: 300;
+                }
+            }
+        }
+
+
+    }
+}
