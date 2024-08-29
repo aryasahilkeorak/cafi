@@ -4,10 +4,15 @@
     top: 0;
     min-height: 55px;
 
-    .cafi-header-wrapper {
+    .cafi-header-wrapper,
+    .cafi-notiNsearch,
+    .bb-n-userInfo {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .cafi-header-wrapper {
         padding: 5px 0;
 
         .cafi-user-info {
@@ -43,10 +48,6 @@
         }
 
         .cafi-notiNsearch {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
             i {
                 color: $white;
                 font-size: 24px;
@@ -72,6 +73,24 @@
             }
         }
 
+        .cafi-header-searchbar {
+            width: calc(100% - 110px);
+
+            input {
+                border: 0;
+                box-shadow: none;
+                background-color: rgba($color: $white, $alpha: 0.4);
+                padding: 10px 15px;
+                width: 100%;
+
+                &::placeholder {
+                    color: rgba($color: $white, $alpha: 0.8);
+                    font-size: 18px;
+                }
+
+            }
+        }
+
         &.backbtn-w-heading {
             justify-content: center;
             padding: 13px 0;
@@ -93,35 +112,66 @@
             &.chat-search {
                 justify-content: space-between !important;
 
-                i {
-                    color: $white;
+                a {
+                    display: inline-block;
                     margin-right: 15px;
-                    font-size: 20px;
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    i {
+                        color: $white;
+                        font-size: 20px;
+                    }
                 }
             }
         }
 
-        .cafi-header-searchbar {
-            width: calc(100% - 110px);
+        &.active-chat-header {
+            .ac-headerIcons {
+                transform: scale(.7);
+            }
 
-            input {
-                border: 0;
-                box-shadow: none;
-                background-color: rgba($color: $white, $alpha: 0.4);
-                padding: 10px 15px;
-                width: 100%;
+            .bb-n-userInfo {
+                .ac-userAvtar {
+                    margin: 0 10px;
 
-                &::placeholder {
-                    color: rgba($color: $white, $alpha: 0.8);
-                    font-size: 18px;
+                    img {
+                        height: 45px;
+                        width: 45px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                    }
                 }
 
+                .ac-userDetails {
+                    .userName {
+                        color: $white;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+
+                    .active-status {
+                        font-size: 12px;
+                        color: $yellow;
+                        position: relative;
+                        padding-left: 10px;
+
+                        &::after {
+                            content: '';
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            background-color: $yellow;
+                            position: absolute;
+                            left: 0;
+                            top: 34%;
+                        }
+
+                    }
+                }
             }
         }
-
-
     }
-
-
-
 }
