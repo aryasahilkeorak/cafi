@@ -12194,9 +12194,6 @@ fieldset:disabled .btn {
 
 .cafi-content-center {
   height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .cafi-checkbox {
@@ -13049,11 +13046,52 @@ fieldset:disabled .btn {
   margin: 0 3px;
 }
 
+.cafi-profile-userInfo {
+  background-color: #FF045F;
+  text-align: center;
+  padding: 10px 0;
+}
+.cafi-profile-userInfo .user-avtar {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto 5px auto;
+  padding: 2px;
+}
+.cafi-profile-userInfo .user-avtar img {
+  border-radius: 50%;
+}
+.cafi-profile-userInfo .userNmae {
+  color: #FFFFFF;
+}
+
+.balanceAndOthers {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 15px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.balanceAndOthers div {
+  width: 25%;
+  text-align: center;
+}
+.balanceAndOthers div .img-wrapper {
+  height: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.balanceAndOthers div h5, .balanceAndOthers div .h5 {
+  margin-bottom: 0;
+}
+
 .cafi-home-header {
   background-color: #FF045F;
   position: sticky;
   top: 0;
   min-height: 55px;
+  display: flex;
+  align-items: center;
 }
 .cafi-home-header .cafi-header-wrapper,
 .cafi-home-header .cafi-notiNsearch,
@@ -13117,7 +13155,7 @@ fieldset:disabled .btn {
   border: 0;
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 10px 15px;
+  padding: 6px 15px;
   width: 100%;
 }
 .cafi-home-header .cafi-header-wrapper .cafi-header-searchbar input::placeholder {

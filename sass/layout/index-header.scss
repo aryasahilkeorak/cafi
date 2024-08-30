@@ -3,6 +3,8 @@
     position: sticky;
     top: 0;
     min-height: 55px;
+    display: flex;
+        align-items: center;
 
     .cafi-header-wrapper,
     .cafi-notiNsearch,
@@ -80,7 +82,7 @@
                 border: 0;
                 box-shadow: none;
                 background-color: rgba($color: $white, $alpha: 0.4);
-                padding: 10px 15px;
+                padding: 6px 15px;
                 width: 100%;
 
                 &::placeholder {

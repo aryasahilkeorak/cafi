@@ -1,0 +1,44 @@
+.cafi-profile-userInfo {
+    background-color: $primary;
+    text-align: center;
+    padding: 10px 0;
+
+    .user-avtar {
+        border: 1px solid rgba($color: $black, $alpha: .25);
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        margin: 0 auto 5px auto;
+        padding: 2px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .userNmae {
+        color: $white;
+    }
+}
+
+.balanceAndOthers {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 15px;
+    box-shadow: 0 2px 10px 0 rgba($color: $black, $alpha: .1);
+
+    div {
+        width: calc(100% / 4);
+        text-align: center;
+
+        .img-wrapper {
+            height: 50px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        h5 {
+            margin-bottom: 0;
+        }
+    }
+}
