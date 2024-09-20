@@ -2,250 +2,322 @@
     height: calc(100dvh - 115px);
     overflow-y: auto;
     overflow-x: hidden;
+}
 
-    .cafi-home-hero-sec {
-        padding: 10px 0;
+.cafi-home-hero-sec {
+    padding: 10px 0;
 
-        .home-hero-slider {
-            .slick-track {
-                display: flex;
-                align-items: center;
-            }
-
-            .img-wrapper {
-                padding: 0 10px;
-
-                img {
-                    height: 180px;
-                    width: 100%;
-                    border-radius: 10px;
-                    transition: ease all .3s;
-                }
-
-                &.slick-active {
-                    img {
-                        height: auto;
-                    }
-                }
-            }
-
-
-            .slick-dots {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                li {
-                    height: unset;
-                    width: unset;
-
-                    button {
-                        background-color: $warning;
-                        border-radius: 50%;
-                        opacity: .5;
-                        height: 10px;
-                        width: 10px;
-                        transition: ease all .3s;
-
-                        &:before {
-                            display: none;
-                        }
-                    }
-
-                    &.slick-active {
-                        button {
-                            width: 45px;
-                            opacity: 1;
-                            border-radius: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .cafi-categories-slider-sec {
-        margin-bottom: 15px;
-
+    .home-hero-slider {
         .slick-track {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-
-            .slick-slide {
-                width: 24% !important;
-
-                .catSlider-item {
-                    text-align: center;
-
-                    img {
-                        margin: 0 auto 6px auto;
-                        max-height: 70px;
-                    }
-                }
-            }
         }
 
-        .slick-next {
-            opacity: 1;
-            right: -4px;
-            top: 30%;
+        .img-wrapper {
+            padding: 0 10px;
 
-            &:before {
-                content: "";
-                color: rgba(0, 0, 0, 0.3137254902);
-                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxNyAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgM0wxMyAxNUwzIDI3IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utb3BhY2l0eT0iMC4yNSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==");
-                height: 26px;
-                width: 14px;
-                position: absolute;
-                background-size: cover;
-                background-repeat: no-repeat;
+            img {
+                height: 180px;
+                width: 100%;
+                border-radius: 10px;
+                transition: ease all .3s;
             }
-        }
-    }
 
-    .cafi-promotion-slider-sec {
-        margin-bottom: 15px;
-
-        .promoSlider-item {
-            margin: 0 5px;
-            width: calc(100% / 3);
-
-            .item-img {
-                position: relative;
-
+            &.slick-active {
                 img {
-                    border-radius: 15px;
-                }
-
-                .discountLabel {
-                    position: absolute;
-                    bottom: 8px;
-                    left: 8px;
-                    background-color: $white;
-                    padding: 3px 5px;
-                    border-radius: 10px 0 10px 0;
-
-                    span {
-                        font-size: 13px;
-                        font-weight: 600;
-                        color: $primary;
-                    }
-                }
-            }
-
-            .price-label {
-                font-size: 13px;
-                color: $black;
-                text-align: end;
-                font-weight: 500;
-            }
-        }
-    }
-
-    .cafi-shop-slider-sec {
-        padding: 5px 0;
-
-
-        .shop-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            h3 {
-                font-weight: 500;
-            }
-        }
-
-        .cafi-shop-items {
-            display: flex;
-            width: 450px;
-            flex-wrap: wrap;
-            overflow-x: scroll;
-
-            .cafi-shop-item {
-                display: inline-flex;
-                align-items: center;
-                background-color: $black10;
-                padding: 10px 15px;
-                border-radius: 20px;
-                width: auto;
-                margin-right: 15px;
-                margin-bottom: 15px;
-
-                &:nth-of-type(even) {
-                    margin-right: 0;
-                }
-
-                .shop-img {
-
-                    img {
-                        border-radius: 50%;
-                        max-width: 70px;
-                        border: 4px solid $white;
-                    }
-                }
-
-                .shop-details {
-                    line-height: 1;
-
-                    .rating {
-                        span {
-                            font-size: 12px;
-                            color: $warning;
-                        }
-                    }
+                    height: auto;
                 }
             }
         }
-    }
 
-    .cafi-coupones-invite-sec {
-        margin-bottom: 15px;
 
-        .coupones-invite-items {
+        .slick-dots {
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid $black25;
-            border-right: 0;
-            border-left: 0;
-            padding: 15px 0px;
 
-            .coupones-invite-item {
-                width: calc(50% - 20px);
-                margin: 0 10px;
-                border-radius: 10px;
-                padding: 20px 5px;
-                background-color: $warning;
-                text-align: center;
+            li {
+                height: unset;
+                width: unset;
 
-                &:last-of-type {
-                    background-color: $blue;
+                button {
+                    background-color: $warning;
+                    border-radius: 50%;
+                    opacity: .5;
+                    height: 10px;
+                    width: 10px;
+                    transition: ease all .3s;
+
+                    &:before {
+                        display: none;
+                    }
                 }
 
-                h5,
-                p {
-                    color: $white;
-                    line-height: 1;
-                    margin-bottom: 0;
-                }
-
-                h5 {
-                    font-weight: bold;
-                    margin-bottom: -8px;
-                }
-
-
-
-                .h-divider {
-                    width: 95%;
-                    height: 3px;
-                    background-color: $white;
-                    display: inline-block;
-                    margin: 0 auto;
+                &.slick-active {
+                    button {
+                        width: 45px;
+                        opacity: 1;
+                        border-radius: 30px;
+                    }
                 }
             }
         }
+    }
+}
+
+.cafi-categories-slider-sec {
+    margin-bottom: 15px;
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .slick-slide {
+            width: 24% !important;
+
+            .catSlider-item {
+                text-align: center;
+
+                img {
+                    margin: 0 auto 6px auto;
+                    max-height: 70px;
+                }
+            }
+        }
+    }
+
+    .slick-next {
+        opacity: 1;
+        right: -4px;
+        top: 30%;
+
+        &:before {
+            content: "";
+            color: rgba(0, 0, 0, 0.3137254902);
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAxNyAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgM0wxMyAxNUwzIDI3IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utb3BhY2l0eT0iMC4yNSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==");
+            height: 26px;
+            width: 14px;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.cafi-promotion-slider-sec {
+    margin-bottom: 15px;
+
+    .promoSlider-item {
+        margin: 0 5px;
+        width: calc(100% / 3);
+
+        .item-img {
+            position: relative;
+
+            img {
+                border-radius: 15px;
+            }
+
+            .discountLabel {
+                position: absolute;
+                bottom: 8px;
+                left: 8px;
+                background-color: $white;
+                padding: 3px 5px;
+                border-radius: 10px 0 10px 0;
+
+                span {
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: $primary;
+                }
+            }
+        }
+
+        .price-label {
+            font-size: 13px;
+            color: $black;
+            text-align: end;
+            font-weight: 500;
+        }
+    }
+}
+
+.cafi-shop-slider-sec {
+    padding: 5px 0;
+
+
+    .shop-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+            font-weight: 500;
+        }
+    }
+
+    .cafi-shop-items {
+        display: flex;
+        width: 450px;
+        flex-wrap: wrap;
+        overflow-x: scroll;
+
+        .cafi-shop-item {
+            display: inline-flex;
+            align-items: center;
+            background-color: $black10;
+            padding: 10px 15px;
+            border-radius: 20px;
+            width: auto;
+            margin-right: 15px;
+            margin-bottom: 15px;
+
+            &:nth-of-type(even) {
+                margin-right: 0;
+            }
+
+            .shop-img {
+
+                img {
+                    border-radius: 50%;
+                    max-width: 70px;
+                    border: 4px solid $white;
+                }
+            }
+
+            .shop-details {
+                line-height: 1;
+
+                .rating {
+                    span {
+                        font-size: 12px;
+                        color: $warning;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cafi-coupones-invite-sec {
+    margin-bottom: 15px;
+
+    .coupones-invite-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $black25;
+        border-right: 0;
+        border-left: 0;
+        padding: 15px 0px;
+
+        .coupones-invite-item {
+            width: calc(50% - 20px);
+            margin: 0 10px;
+            border-radius: 10px;
+            padding: 20px 5px;
+            background-color: $warning;
+            text-align: center;
+
+            &:last-of-type {
+                background-color: $blue;
+            }
+
+            h5,
+            p {
+                color: $white;
+                line-height: 1;
+                margin-bottom: 0;
+            }
+
+            h5 {
+                font-weight: bold;
+                margin-bottom: -8px;
+            }
+
+
+
+            .h-divider {
+                width: 95%;
+                height: 3px;
+                background-color: $white;
+                display: inline-block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.cafi-hot-promo-sec {
+    .hot-promo-card {
+        background-color: #FF045F;
+        border-radius: 20px;
+        padding: 15px 15px;
+        justify-content: space-between;
+
+        &:nth-of-type(odd) {
+            padding-right: 20px;
+        }
+
+        &:nth-of-type(even) {
+            padding-left: 20px;
+        }
+
+        .prormo-img {
+
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.cafi-coffee-items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+
+    .cafi-coffee-item {
+        background-color: rgba($color: $black, $alpha: .05);
+        padding: 10px;
+        border-radius: 15px;
+        width: calc(50% - 7.5px);
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .coffee-img {
+            margin-bottom: 10px;
+
+            img {
+                min-width: 100%;
+            }
+        }
+
+        .coffee-info {
+            .cc-name {
+                margin-bottom: 6px;
+                text-wrap: wrap;
+            }
+        }
+
+        .cc-rating {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .rating-counts {
+                font-size: 12px;
+                color: $warning;
+                margin-top: 5px;
+                display: inline-block;
+            }
+        }
+
     }
 }
